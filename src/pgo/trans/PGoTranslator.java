@@ -57,8 +57,7 @@ public class PGoTranslator {
 
 	public void copyPackages(PGoOptions opts) throws IOException {
 		FileUtils.copyDirectory(new File("src/go/pgo"), new File(opts.buildDir + "/src/pgo"));
-		FileUtils.copyDirectory(new File("src/go/github.com/emirpasic"),
-				new File(opts.buildDir + "/src/github.com/emirpasic"));
+		FileUtils.copyDirectory(new File("src/go/github.com"), new File(opts.buildDir + "/src/github.com"));
 		FileUtils.copyDirectory(new File("src/go/pgonet"), new File(opts.buildDir + "/src/pgonet"));
 	}
 
